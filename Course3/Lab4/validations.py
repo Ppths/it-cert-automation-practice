@@ -1,16 +1,8 @@
-#!/usr/bin/env python3
-
-import re
-
 def validate_user(username, minlen):
-
-    # Lista de caracteres prohibidos al inicio
 
     forbidden_start = ['.', '_']
 
 
-
-    # Verifica si el nombre es suficientemente largo
 
     if len(username) < minlen:
 
@@ -18,15 +10,9 @@ def validate_user(username, minlen):
 
 
 
-    # Verifica si el primer carácter es prohibido
-
     if username[0] in forbidden_start:
 
         return False
-
-
-
-    # Verifica si el nombre es alfanumérico o contiene solo '_' y '.'
 
     for char in username:
 
